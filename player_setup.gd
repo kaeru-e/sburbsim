@@ -5,7 +5,7 @@ extends Control
 @onready var amount_input: OptionButton = $"Background/MarginContainer/Rows/Initialising/Player Amount/amount_dropdown"
 @onready var player_row: VBoxContainer = $Background/MarginContainer/Rows/player_row
 var players: Array[Player] = []
-var player_amount_debug: int = 4
+var player_amount_debug: int = 12
 var player_select: PackedScene = preload("res://player_select.tscn")
 
 

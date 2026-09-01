@@ -22,6 +22,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameData="*uid://cll61eawppncp"
+PlayerSetup="*uid://g7cvtkwsympx"
+SeedRng="*uid://pq6k5adwb4iq"
 
 [rendering]
 
