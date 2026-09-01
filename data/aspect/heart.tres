@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Aspect" format=3 uid="uid://b7y6aw1grbb1h"]
+
+[ext_resource type="Script" uid="uid://b0ko6vjxah817" path="res://data/aspect/aspect.gd" id="1_ebrrv"]
+
+[resource]
+script = ExtResource("1_ebrrv")
+id = "8"
+display_name = "Heart"
+primary_color = Color(0.7411765, 0.09411765, 0.39215687, 1)
+secondary_color = Color(0.43137255, 0.05490196, 0.18039216, 1)
+metadata/_custom_type_script = "uid://b0ko6vjxah817"

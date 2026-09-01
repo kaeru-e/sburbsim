@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Aspect" format=3 uid="uid://dhfxmlksfniw"]
+
+[ext_resource type="Script" uid="uid://b0ko6vjxah817" path="res://data/aspect/aspect.gd" id="1_qv4xa"]
+
+[resource]
+script = ExtResource("1_qv4xa")
+id = "6"
+display_name = "Void"
+primary_color = Color(0, 0.08627451, 0.30980393, 1)
+secondary_color = Color(0.011764706, 0.20392157, 0.4627451, 1)
+metadata/_custom_type_script = "uid://b0ko6vjxah817"

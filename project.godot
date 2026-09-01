@@ -15,8 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="sburbsimbc"
+run/main_scene="uid://bv247l813qcsx"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameData="*uid://cll61eawppncp"
 
 [rendering]
 

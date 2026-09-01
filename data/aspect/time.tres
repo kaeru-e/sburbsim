@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Aspect" format=3 uid="uid://dtwk602fwrdnv"]
+
+[ext_resource type="Script" uid="uid://b0ko6vjxah817" path="res://data/aspect/aspect.gd" id="1_7wr23"]
+
+[resource]
+script = ExtResource("1_7wr23")
+id = "4"
+display_name = "Time"
+primary_color = Color(1, 0.12941177, 0.023529412, 1)
+secondary_color = Color(0.7176471, 0.050980393, 0.05490196, 1)
+metadata/_custom_type_script = "uid://b0ko6vjxah817"

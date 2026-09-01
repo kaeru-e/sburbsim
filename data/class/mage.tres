@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SBURBClass" format=3 uid="uid://cvxq7ip5m4cpd"]
+
+[ext_resource type="Script" uid="uid://ep2nrlfwoo4x" path="res://data/class/class.gd" id="1_16ujb"]
+
+[resource]
+script = ExtResource("1_16ujb")
+id = "106"
+display_name = "Mage"
+mode = "Active"
+metadata/_custom_type_script = "uid://ep2nrlfwoo4x"

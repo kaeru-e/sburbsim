@@ -1,7 +1,0 @@
-[gd_resource type="Resource" script_class="Aspect" format=3 uid="uid://575dlokfn5c2"]
-
-[ext_resource type="Script" uid="uid://b0ko6vjxah817" path="res://resources/aspect.gd" id="1_hnbjo"]
-
-[resource]
-script = ExtResource("1_hnbjo")
-metadata/_custom_type_script = "uid://b0ko6vjxah817"

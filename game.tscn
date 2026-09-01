@@ -1,15 +1,33 @@
 [gd_scene format=3 uid="uid://bv247l813qcsx"]
 
+[ext_resource type="Script" uid="uid://8aehyd43sfk0" path="res://player_setup.gd" id="1_80nbo"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwb40"]
 bg_color = Color(0.104645595, 0.07500772, 0.20039877, 1)
 
-[node name="game" type="Control" unique_id=377824988]
+[sub_resource type="GDScript" id="GDScript_e2o6t"]
+script/source = "extends OptionButton
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="PlayerSetup" type="Control" unique_id=377824988]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_80nbo")
 
 [node name="Background" type="PanelContainer" parent="." unique_id=860798212]
 layout_mode = 1
@@ -30,3 +48,73 @@ theme_override_constants/margin_bottom = 20
 [node name="Rows" type="VBoxContainer" parent="Background/MarginContainer" unique_id=71562148]
 layout_mode = 2
 theme_override_constants/separation = 10
+
+[node name="Initialising" type="HBoxContainer" parent="Background/MarginContainer/Rows" unique_id=1102988657]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Game Session Seed" type="BoxContainer" parent="Background/MarginContainer/Rows/Initialising" unique_id=706796511]
+layout_mode = 2
+
+[node name="Seed" type="Label" parent="Background/MarginContainer/Rows/Initialising/Game Session Seed" unique_id=946082501]
+layout_mode = 2
+text = "Game Session Seed"
+
+[node name="seed_input" type="LineEdit" parent="Background/MarginContainer/Rows/Initialising/Game Session Seed" unique_id=197082800]
+layout_mode = 2
+placeholder_text = "413"
+max_length = 8
+emoji_menu_enabled = false
+
+[node name="Player Amount" type="BoxContainer" parent="Background/MarginContainer/Rows/Initialising" unique_id=175949304]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Amount" type="Label" parent="Background/MarginContainer/Rows/Initialising/Player Amount" unique_id=706509655]
+layout_mode = 2
+text = "Amount of Players"
+
+[node name="amount_dropdown" type="OptionButton" parent="Background/MarginContainer/Rows/Initialising/Player Amount" unique_id=1165740905]
+layout_mode = 2
+script = SubResource("GDScript_e2o6t")
+
+[node name="Player" type="HBoxContainer" parent="Background/MarginContainer/Rows" unique_id=2075833732]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Player Name" type="BoxContainer" parent="Background/MarginContainer/Rows/Player" unique_id=281854243]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Name" type="Label" parent="Background/MarginContainer/Rows/Player/Player Name" unique_id=903486477]
+layout_mode = 2
+text = "Player Name"
+
+[node name="name_input" type="LineEdit" parent="Background/MarginContainer/Rows/Player/Player Name" unique_id=1914718527]
+custom_minimum_size = Vector2(130, 0)
+layout_mode = 2
+placeholder_text = "John Egbert"
+max_length = 8
+emoji_menu_enabled = false
+
+[node name="Class" type="BoxContainer" parent="Background/MarginContainer/Rows/Player" unique_id=1289570413]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="Background/MarginContainer/Rows/Player/Class" unique_id=436308271]
+layout_mode = 2
+text = "Class"
+
+[node name="class_dropdown" type="OptionButton" parent="Background/MarginContainer/Rows/Player/Class" unique_id=989160335]
+layout_mode = 2
+
+[node name="Aspect" type="BoxContainer" parent="Background/MarginContainer/Rows/Player" unique_id=314843508]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="Background/MarginContainer/Rows/Player/Aspect" unique_id=859882693]
+layout_mode = 2
+text = "Aspect"
+
+[node name="aspect_dropdown" type="OptionButton" parent="Background/MarginContainer/Rows/Player/Aspect" unique_id=1425552195]
+layout_mode = 2

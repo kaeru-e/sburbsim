@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="Aspect" format=3 uid="uid://ca6nonjbhb0lp"]
 
-[ext_resource type="Script" uid="uid://b0ko6vjxah817" path="res://resources/aspect.gd" id="1_meevl"]
+[ext_resource type="Script" uid="uid://b0ko6vjxah817" path="res://data/aspect/aspect.gd" id="1_lfm50"]
 
 [resource]
-script = ExtResource("1_meevl")
+script = ExtResource("1_lfm50")
 id = "2"
-display_name = "blood"
+display_name = "Blood"
 metadata/_custom_type_script = "uid://b0ko6vjxah817"
