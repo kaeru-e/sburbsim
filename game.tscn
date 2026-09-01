@@ -78,43 +78,5 @@ text = "Amount of Players"
 layout_mode = 2
 script = SubResource("GDScript_e2o6t")
 
-[node name="Player" type="HBoxContainer" parent="Background/MarginContainer/Rows" unique_id=2075833732]
-layout_mode = 2
-theme_override_constants/separation = 20
-
-[node name="Player Name" type="BoxContainer" parent="Background/MarginContainer/Rows/Player" unique_id=281854243]
-layout_mode = 2
-theme_override_constants/separation = 10
-
-[node name="Name" type="Label" parent="Background/MarginContainer/Rows/Player/Player Name" unique_id=903486477]
-layout_mode = 2
-text = "Player Name"
-
-[node name="name_input" type="LineEdit" parent="Background/MarginContainer/Rows/Player/Player Name" unique_id=1914718527]
-custom_minimum_size = Vector2(130, 0)
-layout_mode = 2
-placeholder_text = "John Egbert"
-max_length = 8
-emoji_menu_enabled = false
-
-[node name="Class" type="BoxContainer" parent="Background/MarginContainer/Rows/Player" unique_id=1289570413]
-layout_mode = 2
-theme_override_constants/separation = 10
-
-[node name="Label" type="Label" parent="Background/MarginContainer/Rows/Player/Class" unique_id=436308271]
-layout_mode = 2
-text = "Class"
-
-[node name="class_dropdown" type="OptionButton" parent="Background/MarginContainer/Rows/Player/Class" unique_id=989160335]
-layout_mode = 2
-
-[node name="Aspect" type="BoxContainer" parent="Background/MarginContainer/Rows/Player" unique_id=314843508]
-layout_mode = 2
-theme_override_constants/separation = 10
-
-[node name="Label" type="Label" parent="Background/MarginContainer/Rows/Player/Aspect" unique_id=859882693]
-layout_mode = 2
-text = "Aspect"
-
-[node name="aspect_dropdown" type="OptionButton" parent="Background/MarginContainer/Rows/Player/Aspect" unique_id=1425552195]
+[node name="player_row" type="VBoxContainer" parent="Background/MarginContainer/Rows" unique_id=15643145]
 layout_mode = 2
