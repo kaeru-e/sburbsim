@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://bv247l813qcsx"]
+
+[ext_resource type="Script" uid="uid://8aehyd43sfk0" path="res://ui/player_setup/player_setup.gd" id="1_46ya0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwb40"]
+bg_color = Color(0.104645595, 0.07500772, 0.20039877, 1)
+
+[node name="PlayerSetup" type="Control" unique_id=377824988]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_46ya0")
+
+[node name="Background" type="PanelContainer" parent="." unique_id=860798212]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mwb40")
+
+[node name="MarginContainer" type="MarginContainer" parent="Background" unique_id=1383634681]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Rows" type="VBoxContainer" parent="Background/MarginContainer" unique_id=71562148]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 10
+
+[node name="Initialising" type="HBoxContainer" parent="Background/MarginContainer/Rows" unique_id=1102988657]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Game Session Seed" type="BoxContainer" parent="Background/MarginContainer/Rows/Initialising" unique_id=706796511]
+layout_mode = 2
+
+[node name="Seed" type="Label" parent="Background/MarginContainer/Rows/Initialising/Game Session Seed" unique_id=946082501]
+layout_mode = 2
+text = "Game Session Seed"
+
+[node name="seed_input" type="LineEdit" parent="Background/MarginContainer/Rows/Initialising/Game Session Seed" unique_id=197082800]
+layout_mode = 2
+placeholder_text = "413"
+max_length = 8
+emoji_menu_enabled = false
+
+[node name="Player Amount" type="BoxContainer" parent="Background/MarginContainer/Rows/Initialising" unique_id=175949304]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Amount" type="Label" parent="Background/MarginContainer/Rows/Initialising/Player Amount" unique_id=706509655]
+layout_mode = 2
+text = "Amount of Players"
+
+[node name="amount_dropdown" type="OptionButton" parent="Background/MarginContainer/Rows/Initialising/Player Amount" unique_id=1165740905]
+layout_mode = 2
+
+[node name="player_row" type="VBoxContainer" parent="Background/MarginContainer/Rows" unique_id=15643145]
+layout_mode = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Background/MarginContainer/Rows" unique_id=580689041]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="start_game" type="Button" parent="Background/MarginContainer/Rows/HBoxContainer" unique_id=1109457521]
+layout_mode = 2
+text = "Start the game"

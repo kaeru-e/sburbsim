@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://pdrmmr04nvmp"]
 
-[ext_resource type="Script" uid="uid://csdvpm1n56ru0" path="res://player_select.gd" id="1_yh01e"]
+[ext_resource type="Script" uid="uid://csdvpm1n56ru0" path="res://ui/player_setup/player_select.gd" id="1_yh01e"]
 
 [node name="player_select" type="HBoxContainer" unique_id=2132718868]
 offset_right = 471.0

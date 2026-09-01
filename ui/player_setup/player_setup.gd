@@ -6,7 +6,7 @@ extends Control
 @onready var player_row: VBoxContainer = $Background/MarginContainer/Rows/player_row
 var players: Array[Player] = []
 var player_amount_debug: int = 12
-var player_select: PackedScene = preload("res://player_select.tscn")
+var player_select: PackedScene = preload("player_select.tscn")
 
 
 func _ready() -> void:

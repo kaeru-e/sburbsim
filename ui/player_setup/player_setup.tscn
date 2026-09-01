@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bv247l813qcsx"]
 
-[ext_resource type="Script" uid="uid://8aehyd43sfk0" path="res://player_setup.gd" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://8aehyd43sfk0" path="res://ui/player_setup/player_setup.gd" id="1_46ya0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwb40"]
 bg_color = Color(0.104645595, 0.07500772, 0.20039877, 1)
@@ -12,7 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_80nbo")
+script = ExtResource("1_46ya0")
 
 [node name="Background" type="PanelContainer" parent="." unique_id=860798212]
 layout_mode = 1

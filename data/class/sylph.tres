@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="SBURBClass" format=3 uid="uid://b80maju5muiwb"]
 
-[ext_resource type="Script" uid="uid://ep2nrlfwoo4x" path="res://data/class/class.gd" id="1_5yivc"]
+[ext_resource type="Script" uid="uid://ep2nrlfwoo4x" path="res://sim/entities/class.gd" id="1_5yivc"]
 
 [resource]
 script = ExtResource("1_5yivc")

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Aspect" format=3 uid="uid://dtwk602fwrdnv"]
 
-[ext_resource type="Script" uid="uid://b0ko6vjxah817" path="res://data/aspect/aspect.gd" id="1_7wr23"]
+[ext_resource type="Script" uid="uid://b0ko6vjxah817" path="res://sim/entities/aspect.gd" id="1_7wr23"]
 
 [resource]
 script = ExtResource("1_7wr23")
