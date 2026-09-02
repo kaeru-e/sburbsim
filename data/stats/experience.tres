@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Stat" format=3 uid="uid://dccbw031djvbo"]
+
+[ext_resource type="Script" uid="uid://ch47kovb0y581" path="res://sim/entities/stat.gd" id="1_8wl6j"]
+
+[resource]
+script = ExtResource("1_8wl6j")
+display_name = "XP"
+minimum_value = 0
+default = 0
+metadata/_custom_type_script = "uid://ch47kovb0y581"

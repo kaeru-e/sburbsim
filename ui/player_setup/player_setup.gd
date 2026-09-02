@@ -9,6 +9,8 @@ extends Control
 
 var player_select: PackedScene = preload("player_select.tscn")
 
+var orphans : Dictionary = {}
+
 
 func _ready() -> void:
 	_populate_amount()
@@ -20,7 +22,7 @@ func _ready() -> void:
 #sets a random amount of players at startup
 func _place_holder():
 	var number = randi_range(GameData.min_player_amount, GameData.max_player_amount)
-	amount_input.select(number-2)
+	amount_input.select(number)
 	_populate_players(number)
 
 
@@ -33,7 +35,7 @@ func _clear_player_rows() -> void:
 #function to change the amount of players when updated
 func _on_amount_selected(index: int) -> void:
 	_clear_player_rows()
-	_populate_players(int(amount_input.get_item_text(index)))
+	_populate_players(index)
 
 
 #populates the optionbox for player amount
@@ -42,17 +44,16 @@ func _populate_amount():
 		amount_input.add_item(str(item))
 
 
-#adds a scene for every player
 func _populate_players(amount: int):
 	var placeholder_id: int = 0
-	for i in range(amount):
+	for i in range(amount+2):
 		var row = player_select.instantiate()
 		player_row.add_child(row)
 		row.populate_placeholder(placeholder_id)
 		placeholder_id+=1
 
 
-#checks if all the players are c
+#checks if all the players are complete
 func _initialise_players():
 	GameData.player_data.clear()
 	for row in player_row.get_children():

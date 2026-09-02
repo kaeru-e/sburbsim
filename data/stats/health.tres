@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Stat" format=3 uid="uid://gxqrqkwwkw87"]
+
+[ext_resource type="Script" uid="uid://ch47kovb0y581" path="res://sim/entities/stat.gd" id="1_x4tje"]
+
+[resource]
+script = ExtResource("1_x4tje")
+display_name = "Health"
+minimum_value = 0
+default = 100
+metadata/_custom_type_script = "uid://ch47kovb0y581"

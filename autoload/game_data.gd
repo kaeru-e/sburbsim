@@ -4,6 +4,7 @@ extends Node
 var aspects: Array[Aspect] = []
 var classes: Array[SBURBClass] = []
 var placeholder_names: Array[String] = []
+var stat_types: Array[Stat] = []
 
 #temp storage between sims so we can do multiple seeds for a group of players
 var player_data: Array[Player] = []
@@ -16,6 +17,7 @@ var max_player_amount: int = 12
 func _ready() -> void:
 	_load_into(aspects, "res://data/aspect/")
 	_load_into(classes, "res://data/class/")
+	_load_into(stat_types, "res://data/stats/")
 	_grab_placeholder_names("res://data/names.txt", placeholder_names)
 
 
