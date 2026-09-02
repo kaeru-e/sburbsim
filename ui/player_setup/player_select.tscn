@@ -1,45 +1,65 @@
 [gd_scene format=3 uid="uid://pdrmmr04nvmp"]
 
 [ext_resource type="Script" uid="uid://csdvpm1n56ru0" path="res://ui/player_setup/player_select.gd" id="1_yh01e"]
+[ext_resource type="Texture2D" uid="uid://coah0jib1getw" path="res://sprites/aspects/void.png" id="2_b5wiy"]
 
-[node name="player_select" type="HBoxContainer" unique_id=2132718868]
-offset_right = 471.0
+[node name="player_select" type="HBoxContainer" unique_id=290083112]
+offset_right = 521.0
 offset_bottom = 31.0
 theme_override_constants/separation = 20
 script = ExtResource("1_yh01e")
 
-[node name="Player_name" type="BoxContainer" parent="." unique_id=1389350418]
+[node name="player_info" type="VBoxContainer" parent="." unique_id=1120172721]
+layout_mode = 2
+
+[node name="selectable" type="HBoxContainer" parent="player_info" unique_id=1665974302]
+layout_mode = 2
+
+[node name="player_name" type="BoxContainer" parent="player_info/selectable" unique_id=1389350418]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="Name" type="Label" parent="Player_name" unique_id=1913259817]
+[node name="Name" type="Label" parent="player_info/selectable/player_name" unique_id=1913259817]
 layout_mode = 2
 text = "Player Name"
 
-[node name="name_input" type="LineEdit" parent="Player_name" unique_id=495900002]
-custom_minimum_size = Vector2(130, 0)
+[node name="name_input" type="LineEdit" parent="player_info/selectable/player_name" unique_id=495900002]
+custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
 max_length = 24
 emoji_menu_enabled = false
 
-[node name="Aspect" type="BoxContainer" parent="." unique_id=11174232]
+[node name="aspect" type="BoxContainer" parent="player_info/selectable" unique_id=11174232]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="Label" type="Label" parent="Aspect" unique_id=1151798566]
+[node name="Label" type="Label" parent="player_info/selectable/aspect" unique_id=1151798566]
 layout_mode = 2
 text = "Aspect"
 
-[node name="aspect_dropdown" type="OptionButton" parent="Aspect" unique_id=2092326]
+[node name="aspect_dropdown" type="OptionButton" parent="player_info/selectable/aspect" unique_id=2092326]
 layout_mode = 2
 
-[node name="Class" type="BoxContainer" parent="." unique_id=1465958696]
+[node name="class" type="BoxContainer" parent="player_info/selectable" unique_id=1465958696]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="Label" type="Label" parent="Class" unique_id=1333712034]
+[node name="Label" type="Label" parent="player_info/selectable/class" unique_id=1333712034]
 layout_mode = 2
 text = "Class"
 
-[node name="class_dropdown" type="OptionButton" parent="Class" unique_id=857740047]
+[node name="class_dropdown" type="OptionButton" parent="player_info/selectable/class" unique_id=857740047]
 layout_mode = 2
+
+[node name="description" type="RichTextLabel" parent="player_info" unique_id=76745444]
+layout_mode = 2
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar, diam at molestie tincidunt, ipsum odio dictum ligula, sed tincidunt leo dui eget est. Integer porta velit sapien, porta volutpat libero malesuada ut. Integer vitae dolor consequat, viverra neque quis, auctor felis. Cras vestibulum feugiat diam vel fermentum. Vestibulum nulla enim, pretium ut scelerisque a, ultricies lacinia velit."
+fit_content = true
+
+[node name="profile" type="Control" parent="." unique_id=2035590875]
+layout_mode = 2
+
+[node name="aspect_image" type="Sprite2D" parent="profile" unique_id=1174607584]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_b5wiy")
+centered = false

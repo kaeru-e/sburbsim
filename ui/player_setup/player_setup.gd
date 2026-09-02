@@ -3,7 +3,7 @@ extends Control
 
 @onready var seed_input: LineEdit = $"Background/MarginContainer/Rows/Initialising/Game Session Seed/seed_input"
 @onready var amount_input: OptionButton = $"Background/MarginContainer/Rows/Initialising/Player Amount/amount_dropdown"
-@onready var player_row: VBoxContainer = $Background/MarginContainer/Rows/player_row
+@onready var player_row: VBoxContainer = $Background/MarginContainer/Rows/ScrollContainer/player_row
 @onready var start_button: Button = $Background/MarginContainer/Rows/HBoxContainer/start_game
 
 
@@ -52,12 +52,14 @@ func _populate_players(amount: int):
 		placeholder_id+=1
 
 
-#checks if all the players are complete, then append to player_data
+#checks if all the players are c
 func _initialise_players():
 	GameData.player_data.clear()
 	for row in player_row.get_children():
 		if not row.is_complete():
 			print("Not all players are complete!")
 			return
-		GameData.player_data.append(row.create_player())
-	print("Created a session with ", 0 ," Players")
+		var new_player = row.create_player()
+		print(new_player.sburb_class.display_name," of ",new_player.aspect.display_name, " is initialised")
+		GameData.player_data.append(new_player)
+	print("Created a session with ", GameData.player_data.size() ," Players")
