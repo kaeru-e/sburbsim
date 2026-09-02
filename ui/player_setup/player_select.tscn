@@ -8,19 +8,18 @@ offset_bottom = 31.0
 theme_override_constants/separation = 20
 script = ExtResource("1_yh01e")
 
-[node name="Player Name" type="BoxContainer" parent="." unique_id=1389350418]
+[node name="Player_name" type="BoxContainer" parent="." unique_id=1389350418]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="Name" type="Label" parent="Player Name" unique_id=1913259817]
+[node name="Name" type="Label" parent="Player_name" unique_id=1913259817]
 layout_mode = 2
 text = "Player Name"
 
-[node name="name_input" type="LineEdit" parent="Player Name" unique_id=495900002]
+[node name="name_input" type="LineEdit" parent="Player_name" unique_id=495900002]
 custom_minimum_size = Vector2(130, 0)
 layout_mode = 2
-placeholder_text = "John Egbert"
-max_length = 8
+max_length = 24
 emoji_menu_enabled = false
 
 [node name="Aspect" type="BoxContainer" parent="." unique_id=11174232]
