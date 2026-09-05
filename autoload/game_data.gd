@@ -3,7 +3,8 @@ extends Node
 #stuff we dont forget between sims
 var aspects: Array[Aspect] = []
 var classes: Array[SBURBClass] = []
-var placeholder_names: Array[String] = []
+var default_player_names: Array[String] = []
+var default_land_names: Array[String] = []
 var stat_types: Array[Stat] = []
 
 #temp storage between sims so we can do multiple seeds for a group of players
@@ -18,7 +19,8 @@ func _ready() -> void:
 	_load_into(aspects, "res://data/aspect/")
 	_load_into(classes, "res://data/class/")
 	_load_into(stat_types, "res://data/stats/")
-	_grab_placeholder_names("res://data/names.txt", placeholder_names)
+	_grab_values("res://data/default/player_names.txt", default_player_names)
+	_grab_values("res://data/default/land_names.txt", default_land_names)
 
 
 func _load_into(target: Array, path: String) -> void:
@@ -31,7 +33,7 @@ func _load_into(target: Array, path: String) -> void:
 			target.append(res)
 
 
-func _grab_placeholder_names(filepath: String, list: Array[String]):
+func _grab_values(filepath: String, list: Array[String]):
 	var file := FileAccess.open(filepath, FileAccess.READ)
 	while file.get_position() < file.get_length():
 		list.append(file.get_line())

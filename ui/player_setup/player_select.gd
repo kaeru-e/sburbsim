@@ -25,9 +25,9 @@ func _change_icon(index: int):
 
 
 #assign random names
-func populate_placeholder(id: int):
+func set_default_name(id: int):
 	if name_input.text == "":
-		name_input.text = GameData.placeholder_names[id]
+		name_input.text = GameData.default_player_names[id] #idk why this gives an error sometimes..
 
 func set_player_icon(aspect: Aspect):
 	var new_texture = load("res://sprites/aspects/"+aspect.display_name.to_lower()+".png")

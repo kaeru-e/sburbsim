@@ -6,4 +6,6 @@
 script = ExtResource("1_lfm50")
 id = "2"
 display_name = "Blood"
+primary_color = Color(0.7294118, 0.09803922, 0.08235294, 1)
+secondary_color = Color(0.23921569, 0.09803922, 0.03529412, 1)
 metadata/_custom_type_script = "uid://b0ko6vjxah817"

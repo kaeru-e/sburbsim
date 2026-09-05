@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://c8ja7v5bx482l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_acoik"]
+bg_color = Color(0.6, 0.4745098, 0.6, 1)
+
+[node name="PlayerSetup" type="Control" unique_id=377824988]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="PanelContainer" parent="." unique_id=860798212]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_acoik")
+
+[node name="MarginContainer" type="MarginContainer" parent="Background" unique_id=1383634681]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/MarginContainer" unique_id=963524230]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/MarginContainer/HBoxContainer" unique_id=1189568498]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+
+[node name="VSlider" type="VSlider" parent="Background/MarginContainer/HBoxContainer/HBoxContainer" unique_id=516303787]
+layout_mode = 2
+
+[node name="Control" type="PanelContainer" parent="Background/MarginContainer/HBoxContainer" unique_id=1098958435]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/MarginContainer/HBoxContainer/Control" unique_id=304683066]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Background/MarginContainer/HBoxContainer/Control/VBoxContainer" unique_id=228317663]
+layout_mode = 2
+size_flags_vertical = 0
+text = "1: Test"
+fit_content = true
+scroll_active = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Background/MarginContainer/HBoxContainer/Control/VBoxContainer" unique_id=79887836]
+layout_mode = 2
+size_flags_vertical = 0
+text = "1: Test"
+fit_content = true
+scroll_active = false

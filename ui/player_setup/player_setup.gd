@@ -49,7 +49,7 @@ func _populate_players(amount: int):
 	for i in range(amount+2):
 		var row = player_select.instantiate()
 		player_row.add_child(row)
-		row.populate_placeholder(placeholder_id)
+		row.set_default_name(placeholder_id)
 		placeholder_id+=1
 
 
@@ -61,6 +61,6 @@ func _initialise_players():
 			print("Not all players are complete!")
 			return
 		var new_player = row.create_player()
-		print(new_player.sburb_class.display_name," of ",new_player.aspect.display_name, " is initialised")
+		print(new_player.sburb_class.display_name," of ",new_player.aspect.display_name, " is initialised. Ready to spawn on " + new_player.land.display_name)
 		GameData.player_data.append(new_player)
 	print("Created a session with ", GameData.player_data.size() ," Players")
